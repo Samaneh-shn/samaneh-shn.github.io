@@ -51,22 +51,7 @@ input::-webkit-search-results-decoration{
 }
 
 
-@import '../../_sass/vars';
-@import '../../_sass/layout';
 
-:root {
-  --pagewidth-desktop: calc(max(min(100vw - #{$sidebarwd} - 2rem, #{$contentwd}), 44rem));
-}
-
-@import "../../_sass/sidebar";
-@import "../../_sass/navigation";
-@import "../../_sass/pagination";
-@import "../../_sass/toc";
-@import "../../_sass/post";
-@import "../../_sass/search";
-@import "../../_sass/darkmode";
-
-/*
 @import 'vars';
 @import 'layout';
 
@@ -81,4 +66,3 @@ input::-webkit-search-results-decoration{
 @import "post";
 @import "search";
 @import "darkmode";
-*/
