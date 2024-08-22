@@ -69,17 +69,17 @@ input::-webkit-search-results-decoration{
 */
 
 
-@import 'blog/_sass/vars.scss';
-@import 'blog/_sass/layout.scss';
+@import 'blog/_sass/vars';
+@import 'blog/_sass/layout';
 
 :root{
   --pagewidth-desktop:calc(max(min(100vw - #{$sidebarwd} - 2rem, #{$contentwd}), 44rem));
 }
 
-@import "blog/_sass/sidebar.scss";
-@import "blog/_sass/navigation.scss";
-@import "blog/_sass/pagination.scss";
-@import "blog/_sass/toc.scss";
-@import "blog/_sass/post.scss";
-@import "blog/_sass/search.scss";
-@import "blog/_sass/darkmode.scss";
+@import "blog/_sass/sidebar";
+@import "blog/_sass/navigation";
+@import "blog/_sass/pagination";
+@import "blog/_sass/toc";
+@import "blog/_sass/post";
+@import "blog/_sass/search";
+@import "blog/_sass/darkmode";
