@@ -50,23 +50,24 @@ input::-webkit-search-results-decoration{
 	display:none;
 }
 
-$color-wenge: #66545E;
-$color-beige: #F1EBE5;
-$color-darkbrown: #3A241A;
-$color-darkorange: #B04008;
-$color-rose: #fa4251;
-$color-aqua: #64c8c8;
-$sidebarwd: 18rem;
-$contentwd: 54rem;
 
-$mediawd: (
-  mobile: 320px,
-  tablet: 769px,
-  desktop: 1025px,
-  wide: 1441px,
-) !default;
+@import '../../_sass/vars';
+@import '../../_sass/layout';
 
-/* @import 'vars'; */
+:root {
+  --pagewidth-desktop: calc(max(min(100vw - #{$sidebarwd} - 2rem, #{$contentwd}), 44rem));
+}
+
+@import "../../_sass/sidebar";
+@import "../../_sass/navigation";
+@import "../../_sass/pagination";
+@import "../../_sass/toc";
+@import "../../_sass/post";
+@import "../../_sass/search";
+@import "../../_sass/darkmode";
+
+/*
+@import 'vars';
 @import 'layout';
 
 :root{
@@ -80,3 +81,4 @@ $mediawd: (
 @import "post";
 @import "search";
 @import "darkmode";
+*/
