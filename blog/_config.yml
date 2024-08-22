@@ -1,7 +1,7 @@
 title: Sam
 description: "I write stuff sometimes."
 logo_img: "/assets/img/favicon.webp"
-profile_img: "/assets/img/sam.jpg"
+profile_img: "/assets/img/profile.webp"
 
 # Social Links
 email: samaneh.shirinnezhad@gmail.com
@@ -21,7 +21,7 @@ google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
 # Otherwise, set its value as "/<repo-name>". ex) baseurl: /myblog
-baseurl: "/blog"
+baseurl: /blog
 
 # Build settings
 plugins:
