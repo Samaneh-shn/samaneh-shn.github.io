@@ -43,6 +43,13 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+#menu-icon {
+    font-size: 36px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
 .navbar a {
     font-size: 25px;
     color: #fff;
@@ -712,6 +719,9 @@ section {
     .header {
         padding: 10px 5%;
     }
+    #menu-icon {
+        display: block;
+    }
     .navbar {
         display: none;
         position: absolute;
@@ -720,6 +730,7 @@ section {
         width: 100%;
         background: #081b29;
         flex-direction: column;
+        padding: 10px 0;
     }
     .navbar.active {
         display: flex;
@@ -728,6 +739,7 @@ section {
         font-size: 18px;
         margin: 10px 0;
         text-align: center;
+        display: block;
     }
     .home {
         background-size: contain;
