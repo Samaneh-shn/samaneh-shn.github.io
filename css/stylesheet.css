@@ -64,6 +64,7 @@ body {
     background: url(../images/bg2.png) no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
@@ -161,11 +162,16 @@ body {
 }
 
 .about-img {
-    padding-bottom: 20%;
-    max-width: 630px;
+    max-width: 100%;
     height: auto;
-    width: 100%;
     border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .about-text h2 {
@@ -189,9 +195,10 @@ body {
 .about-text p {
     color: aliceblue;
     font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
     padding: 0 30px;
+    word-wrap: break-word;
 }
 
 .projects {
@@ -645,6 +652,9 @@ section {
         font-size: 20px;
         margin-left: 25px;
     }
+    .home {
+        background-attachment: scroll;
+    }
     .home-content h3 {
         font-size: 28px;
     }
@@ -659,8 +669,8 @@ section {
         padding: 5%;
     }
     .about-img {
-        padding-bottom: 10%;
         max-width: 100%;
+        padding-bottom: 0;
     }
     .about-text h2 {
         font-size: 48px;
@@ -670,6 +680,7 @@ section {
     }
     .about-text p {
         font-size: 16px;
+        margin-bottom: 1.5rem;
     }
     .sub-title {
         font-size: 48px;
@@ -706,6 +717,8 @@ section {
         text-align: center;
     }
     .home {
+        background-size: cover;
+        background-attachment: scroll;
         padding: 10% 5%;
     }
     .home-content h3 {
@@ -731,6 +744,7 @@ section {
     }
     .about-text p {
         font-size: 14px;
+        margin-bottom: 1rem;
     }
     .sub-title {
         font-size: 36px;
