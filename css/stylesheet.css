@@ -154,8 +154,8 @@ body {
 }
 
 .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 1.5rem;
     padding: 5% 10%;
@@ -172,6 +172,10 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
 }
 
 .about-text h2 {
@@ -654,6 +658,8 @@ section {
     }
     .home {
         background-attachment: scroll;
+        background-size: contain;
+        background-position: top center;
     }
     .home-content h3 {
         font-size: 28px;
@@ -665,21 +671,28 @@ section {
         font-size: 18px;
     }
     .about {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         padding: 5%;
     }
     .about-img {
-        max-width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
         padding-bottom: 0;
+    }
+    .about-text {
+        width: 100%;
     }
     .about-text h2 {
         font-size: 48px;
+        padding: 0 15px;
     }
     .about-text h4 {
         font-size: 24px;
+        padding: 0 15px;
     }
     .about-text p {
         font-size: 16px;
+        padding: 0 15px;
         margin-bottom: 1.5rem;
     }
     .sub-title {
@@ -717,8 +730,9 @@ section {
         text-align: center;
     }
     .home {
-        background-size: cover;
+        background-size: contain;
         background-attachment: scroll;
+        background-position: top center;
         padding: 10% 5%;
     }
     .home-content h3 {
@@ -736,14 +750,20 @@ section {
         font-size: 16px;
         margin: 15px 10px;
     }
+    .about-img {
+        max-width: 100%;
+    }
     .about-text h2 {
         font-size: 36px;
+        padding: 0 10px;
     }
     .about-text h4 {
         font-size: 20px;
+        padding: 0 10px;
     }
     .about-text p {
         font-size: 14px;
+        padding: 0 10px;
         margin-bottom: 1rem;
     }
     .sub-title {
